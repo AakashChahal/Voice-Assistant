@@ -14,9 +14,9 @@ import SpeedTest
 
 # noinspection SpellCheckingInspection
 users = {
-    'aakash': 'aakash.chahal62@gmail.com',
-    'shivam': 'shivamchahal.105@gmail.com',
-    'abhishek': 'abhishekdam852@gmail.com',
+    'aakash': '****************',
+    'shivam': '*****************',
+    'abhishek': '****************',
 }
 
 engine = pyttsx3.init('sapi5')
@@ -85,8 +85,8 @@ def send_email(to, msg):
     server.ehlo()
     server.starttls()
     # login details needed to be stored in separate file.
-    server.login('chahalaakash.17@gmail.com', 'password@secondemail')
-    server.sendmail('chahalaakash.17@gmail.com', to, msg)
+    server.login('*************', '********')
+    server.sendmail('***********', to, msg)
     server.close()
 
 
@@ -127,12 +127,12 @@ def main():
                 app = regex.group(1)
                 if 'vs code' in userQuery:
                     speak("Opening VS Code")
-                    os.startfile('C:\\Users\\aakas\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe')
+                    os.startfile('C:\\Users\\path to\\Code.exe')
 
                 elif 'pycharm' in userQuery:
                     speak("Opening Pycharm")
                     os.startfile(
-                        '"C:\\Program Files\\JetBrains\\PyCharm Community Edition 2020.2.1\\bin\\pycharm64.exe"')
+                        '"C:\\Program Files\\path to\\pycharm64.exe"')
                 else:
                     os.startfile(f'C:\\{app}.exe')
 
